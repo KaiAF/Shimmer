@@ -14,11 +14,13 @@
 		"LiquidBlockRendererMixin",
 		"MainTargetMixin",
 		"ModelBlockRendererMixin",
+		"optifine.ModelBlockRendererMixin",
 		"ParticleDescriptionMixin",
 		"PostChainMixin",
 		"PostPassMixin",
 		"ProgramMixin",
 		"RebuildTaskMixin",
+		"optifine.RebuildTaskMixin",
 		"RenderChunkMixin",
 		"RenderTargetMixin",
 		"ShaderInstanceGlslProcessorMixin"

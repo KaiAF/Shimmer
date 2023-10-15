@@ -33,12 +33,12 @@ public class ShimmerMixinPlugin implements IMixinConfigPlugin , MixinPluginShare
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
         if (IS_OPT_LOAD){
-            return false;
+            return !mixinClassName.equals("com.lowdragmc.shimmer.core.mixins.RebuildTaskMixin") && !mixinClassName.equals("com.lowdragmc.shimmer.core.mixins.ModelBlockRendererMixin");
         }
         if (IS_DASH_LOADER && mixinClassName.contains("reloadShader")){
             return false;
         }
-        return true;
+        return !mixinClassName.equals("com.lowdragmc.shimmer.core.mixins.optifine.RebuildTaskMixin") && !mixinClassName.equals("com.lowdragmc.shimmer.core.mixins.optifine.ModelBlockRendererMixin");
     }
 
     @Override

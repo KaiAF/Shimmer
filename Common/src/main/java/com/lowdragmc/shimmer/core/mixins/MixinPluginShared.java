@@ -11,7 +11,7 @@ public interface MixinPluginShared {
 		}
 	}
 
-	boolean IS_OPT_LOAD = isClassFound("optifine.OptiFineTranformationService");
+	boolean IS_OPT_LOAD = isClassFound("optifine.Installer");
 	boolean IS_DASH_LOADER = isClassFound("dev.quantumfusion.dashloader.mixin.MixinPlugin");
 
 	boolean IS_SODIUM_LOAD = isClassFound("me.jellysquid.mods.sodium.mixin.SodiumMixinPlugin");

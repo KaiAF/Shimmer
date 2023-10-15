@@ -27,7 +27,6 @@ public class ShimmerForgeMixinPlugin implements IMixinConfigPlugin , MixinPlugin
 
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
-        if (IS_OPT_LOAD) return false;
         if (mixinClassName.contains("com.lowdragmc.shimmer.core.mixins.rubidium")) {
             return IS_RUBIDIUM_LOAD;
         }
